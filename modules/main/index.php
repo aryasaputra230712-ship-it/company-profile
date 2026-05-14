@@ -1,6 +1,7 @@
 <?php
 // Perbaikan pada DOCUMENT_ROOT
 define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/test/e-commerce');
+$page_css = "main";
 
 include ROOTPATH . "/config/config.php";
 include ROOTPATH . "/layouts/header.php";

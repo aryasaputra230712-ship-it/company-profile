@@ -10,21 +10,28 @@ $base_url = "/test/e-commerce";
 <!DOCTYPE html>
 <html lang="id">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Judul Dinamis: Jika variabel $title tidak ada, pakai default -->
-    <title><?php echo isset($title) ? $title : "Aurelis Jewelry | Official Store"; ?></title>
+<!-- Judul Dinamis: Jika variabel $title tidak ada, pakai default -->
+<title><?php echo isset($title) ? $title : "Aurelis Jewelry | Official Store"; ?></title>
 
-    <!-- Google Fonts agar tipografi terlihat modern -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- Google Fonts agar tipografi terlihat modern -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- Pemanggilan CSS menggunakan Base URL agar rapi -->
-    <link rel="stylesheet" href="<?= $base_url; ?>assets/css/css/style.css">
+<!-- Pemanggilan CSS menggunakan Base URL agar rapi -->
+<link rel="stylesheet" href="<?= $base_url; ?>assets/css/css/style.css">
 
-    <!-- Font Awesome untuk ikon sosial media & user -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!-- Font Awesome untuk ikon sosial media & user -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<!-- Global CSS -->
+<link rel="stylesheet" href="<?PHP $base_url; ?> /assets/css/global.css">
+
+<?php if (isset($page_css)) : ?>
+    <link rel="stylesheet" href="<?php $base_url ?> /assets/css/<?php $page_css; ?>.css">
+<?php endif; ?>
 </head>
 
 <body>
