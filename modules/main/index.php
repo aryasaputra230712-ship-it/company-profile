@@ -1,36 +1,26 @@
-<?php 
-define('ROOTPATH', $_SERVER['DOCUMENT_ROOTPATH']. '/db_company_profile');
+<?php
+// Perbaikan pada DOCUMENT_ROOT
+define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/test/e-commerce');
 
 include ROOTPATH . "/config/config.php";
 include ROOTPATH . "/layouts/header.php";
 
-
+// Asumsikan header.php sudah menutup tag </head> dan membuka <body>
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<main>
+    <div class="container-main">
+        <div class="main-intro">
+            <!-- Tambahkan class agar mudah diatur di CSS -->
+            <video class="video-bg" muted autoplay loop playsinline>
+                <source src="../../assets/videos/mainVideo.mp4" type="video/mp4">
+                Browser Anda tidak mendukung video.
+            </video>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
-</head>
-
-<body>
-    <main>
-        <div class="container-main">
-            <div class="main-intro">
-                <video muted autoplay loop>
-                    <source src="../../assets/videos/mainVideo.mp4" type="video/mp4">
-                </video>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, praesentium.</p>
+            <div class="intro-content">
+                <!-- Nanti Lorem Ipsum ini diganti dengan data dari database -->
+                <p>Mulai bangun masa depan digital Anda bersama kami.</p>
             </div>
-
         </div>
-
-
-    </main>
-</body>
-
-</html>
+    </div>
+</main>
