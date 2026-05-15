@@ -1,7 +1,7 @@
 <?php
-if (!defined('ROOTPATH')) {
-    define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/test/e-commerce');
-}
+define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/test/e-commerce');
+define('BASE_URL', '/test/e-commerce');
+
 $page_css = "/modules/main";
 
 include_once ROOTPATH . "/config/config.php";
@@ -19,7 +19,7 @@ while ($row = mysqli_fetch_assoc($query)) {
     <div class="container-main">
         <div class="main-intro">
             <video class="video-bg" muted autoplay loop playsinline>
-                <source src="../assets/videos/<?= $slides[0]['video_file']; ?>" type="video/mp4">
+                <source src="<?= BASE_URL ?>/assets/videos/<?= $slides[0]['video_file']; ?>" type="video/mp4">
             </video>
 
             <div class="intro-content">
