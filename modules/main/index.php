@@ -7,7 +7,7 @@ $page_css = "/modules/main";
 include ROOTPATH . "/config/config.php";
 include ROOTPATH . "/layouts/header.php";
 
-$query = mysqli_query($conn, "SELECT * FROM company_info where id=1");
+$query = mysqli_query($conn, "SELECT * FROM hero_slide where id=1");
 $info = mysqli_fetch_assoc($query);
 ?>
 
@@ -42,7 +42,9 @@ $info = mysqli_fetch_assoc($query);
                 </video>
 
                 <div class="intro-content">
-                    <p>Mulai bangun masa depan digital Anda bersama kami.</p>
+                    <img src="../../assets/imgs/main/logo.png">
+                    <h1><?= $info['title']; ?></h1>
+                    <p><?= $info['subtitle'] ?></p>
                 </div>
             </div>
         </div>
