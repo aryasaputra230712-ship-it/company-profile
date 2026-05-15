@@ -31,6 +31,24 @@ while ($row = mysqli_fetch_assoc($query)) {
     </div>
 </main>
 
+<section class="about-section">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-text">
+                <h3>SINCE 2006</h3>
+                <h2>PERJALANAN & LAHIRNYA AURELIS</h2>
+                <p>
+                    Aurelis bukan sekadar brand perhiasan. Ini adalah simbol ketangguhan dan keindahan yang lahir dari pengalaman panjang. Setiap lekukan desain kami membawa cerita tentang kekuatan hati.
+                </p>
+                <a href="#" class="btn-primary">Pelajari Selengkapnya</a>
+            </div>
+            <div class="about-img">
+                <img src="../../assets/imgs/about-founder.jpg" alt="Founder Aurelis">
+            </div>
+        </div>
+    </div>
+</section>
+
 <script>
     window.dataSlides = <?php echo json_encode($slides); ?>;
 </script>
