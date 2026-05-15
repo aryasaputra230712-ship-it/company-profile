@@ -19,11 +19,11 @@ while ($row = mysqli_fetch_assoc($query)) {
     <div class="container-main">
         <div class="main-intro">
             <video class="video-bg" muted autoplay loop playsinline>
-                <source src="../../assets/videos/<?= $slides[0]['video_file'];?>" type="video/mp4">
+                <source src="/assets/videos/<?= $slides[0]['video_file']; ?>" type="video/mp4">
             </video>
 
             <div class="intro-content">
-                <img src="../../assets/imgs/main/logo.png" alt="Logo">
+                <img src="../assets/imgs/main/logo.png" alt="Logo">
                 <h1 id="dynamic-title"><?= $slides[0]['title']; ?></h1>
                 <p id="dynamic-subtitle"><?= $slides[0]['subtitle']; ?></p>
             </div>
